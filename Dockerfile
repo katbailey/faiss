@@ -2,9 +2,9 @@ FROM nvidia/cuda:8.0-devel-ubuntu16.04
 MAINTAINER Pierre Letessier <pletessier@ina.fr>
 
 RUN apt-get update -y
-RUN apt-get install -y libopenblas-dev python-numpy python-dev swig git python-pip wget
+RUN apt-get install -y libopenblas-dev python3 python3-numpy python3-dev swig git python3-pip wget
 
-RUN pip install matplotlib
+RUN pip3 install matplotlib
 
 COPY . /opt/faiss
 
